@@ -17,24 +17,26 @@
 
 
 <%= form_for(@message, html: { class: 'form-horizontal' }) do |f| %>
-<div class="form-group">
-  <div class="col-md-6">
+<div class="row 2">
+ <div class="form-group">
+  <div class="col-sm-6">
   名前:
  <%= f.text_field :name %>
   </div>
 </div>
 
 <div class="form-group">
- <div class="col-md-6">
+ <div class="col-sm-6">
   内容:
   <%= f.text_area :body %>
  </div>
 </div>
 
 <div class="form-group">
-   <div class="col-md-6">
+   <div class="col-sm-6">
   <%= f.submit class: "btn btn-sm btn-primary" %>
 　 </div>
+ </div>
 </div>
 
 <% end %>
