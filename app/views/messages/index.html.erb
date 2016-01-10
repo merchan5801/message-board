@@ -19,6 +19,7 @@
 <%= form_for(@message, html: { class: 'form-horizontal' }) do |f| %>
 <div class="row 2">
  <div class="form-group">
+ <label for="inputname" class="col-sm-2 control-label">きれいなジャイアン</label>
   <div class="col-sm-4">
   名前:
  <%= f.text_field :name, size: "form-control" %>
@@ -26,6 +27,7 @@
 </div>
 
 <div class="form-group">
+ <label for="text" class="col-sm-2 control-label">はじめましてきれいなジャイアンです。</label>
  <div class="col-sm-4">
   内容:
   <%= f.text_area :body, size: "form-control" %>
