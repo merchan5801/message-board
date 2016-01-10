@@ -19,12 +19,12 @@
 <%= form_for(@message, html: { class: 'form-horizontal' }) do |f| %>
 <div class="form-group">
   名前:
-  <%=f.text_field :name %>
+  <%=f.text_field :size :size => "20x40" :name %>
  </div>
 
 <div class="form-group">
   内容:
-  <%= f.text_area :body %>
+  <%= f.text_area :size => "20x10" :body %>
 </div>
 
 <div class="form-group">
