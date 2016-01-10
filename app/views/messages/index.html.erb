@@ -19,7 +19,7 @@
 <%= form_for(@message, html: { class: 'form-horizontal' }) do |f| %>
 <div class="form-group">
   名前:
-  <%=f.text_field  :name%>
+  <%=f.text_field  :name maxlength: 10, %>
 
    <input id="page_name" name="page[name]" type="text" />
   
