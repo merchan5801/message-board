@@ -19,14 +19,14 @@
 <%= form_for(@message, html: { class: 'form-horizontal' }) do |f| %>
 
  <div class="form-group">
- <label for="inputname" class="col-sm-2 control-label">名前</label>
+ <label for="input" class="input-group-addon">名前</label>
   <div class="col-sm-4">
    <%= f.text_field :name, size: "form-control", placeholder:"例：小山　雅史" %>
   </div>
 </div>
 
 <div class="form-group">
- <label for="text" class="col-sm-2 control-label">内容</label>
+ <label for="body" class="col-sm-2 control-label">内容</label>
  <div class="col-sm-4">
   <%= f.text_area :body, size: "form-control", placeholder:"例:はじめまして" %>
  </div>
