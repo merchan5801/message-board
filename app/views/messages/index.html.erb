@@ -21,19 +21,20 @@
  <div class="form-group">
  <label for="inputname" class="col-sm-2 control-label">名前</label>
   <div class="col-sm-4">
-   <%= f.text_field :name, size: "form-control", placeholder:"例：ジャイアン" %>
+   <%= f.text_field :name, size: "form-control", placeholder:"例：小山　雅史" %>
   </div>
 </div>
 
 <div class="form-group">
  <label for="text" class="col-sm-2 control-label">内容</label>
  <div class="col-sm-4">
-  <%= f.text_area :body, size: "form-control", placeholder:"例:はじめましてきれいなジャイアンです" %>
+  <%= f.text_area :body, size: "form-control", placeholder:"例:はじめまして" %>
  </div>
 </div>
 
 <div class="form-group">
    <div class="col-sm-4">
+      <label for="btn" class="col-sm-2 control-label">メッセージ作成</label>
   <%= f.submit class: "btn btn-sm btn-primary" %>
 　 </div>
  </div>
