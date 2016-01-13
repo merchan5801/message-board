@@ -7,9 +7,10 @@
     
   <div class="panel-body">
     <% @messages.each do |message| %>
-      <span class="label label-info"><%= message.name %></span>
+      <span class="label label-info">名前:<%= message.name %></span>
       <span class="glyphicon glyphicon-user">年齢:<%= message.age %></span>
-      <%= message.body %>
+      <span class="label label-default">内容:<%= message.body %></span>
+      
        (<%= link_to "edit" , edit_message_path(message) %>)
         <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
         
